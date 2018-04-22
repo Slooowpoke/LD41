@@ -11,9 +11,12 @@ public class Player extends Entity implements RenderableEntity{
         super(position, RunGame.images.get("Player"));
     }
 
-
     @Override
     public void render(SpriteBatch batch) {
         batch.draw(sprite, getCentralX(), getCentralY());
+    }
+
+    public Vector2 getPosition(){
+        return new Vector2(position.x, position.y);
     }
 }
