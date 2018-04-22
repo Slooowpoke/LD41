@@ -11,7 +11,7 @@ public class Entity {
 
     public Entity(Vector2 position, Texture texture)
     {
-        this.position = position;
+        this.position = new Vector2(position);
         this.sprite = new Sprite(texture);
     }
 

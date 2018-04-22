@@ -15,4 +15,8 @@ public class Enemy extends Entity implements RenderableEntity{
     public void render(SpriteBatch batch) {
         batch.draw(sprite, getCentralX(), getCentralY());
     }
+
+    public Vector2 getPosition() {
+        return new Vector2(position);
+    }
 }
